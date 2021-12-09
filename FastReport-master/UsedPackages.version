@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!-- This group sets version used packages in FastReport.Core, FastReport.OpenSource & FastReport.Core3 -->
+    <PropertyGroup>
+
+        <FRCompatVersion>2020.3.8</FRCompatVersion>
+
+        <FRDataVisualizationVersion>2020.3.8</FRDataVisualizationVersion>
+		
+    </PropertyGroup>
+	
+<!-- This group sets version used packages in Demos -->
+	<PropertyGroup>
+        
+		<FRCoreVersion>2020.3.17</FRCoreVersion>
+		
+		<FRCoreWebVersion>2020.3.17</FRCoreWebVersion>
+		
+		<FROSVersion>2020.3.17</FROSVersion>
+		
+		<FROSWebVersion>2020.3.17</FROSWebVersion>
+		
+    </PropertyGroup>
+
+</Project>

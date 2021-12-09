@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="H:\Works\VB.Net\SamEn_Inventory\SamEn_Inventory.vbproj" />
+  <event action="Analyze" type="Success" name="Frm_Category.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Category.resx" />
+  <event action="Analyze" type="Success" name="Frm_Customers.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Customers.resx" />
+  <event action="Analyze" type="Success" name="Frm_Delivery.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Delivery.resx" />
+  <event action="Analyze" type="Success" name="Frm_GInS.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_GInS.resx" />
+  <event action="Analyze" type="Success" name="Frm_Goods.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Goods.resx" />
+  <event action="Analyze" type="Success" name="Frm_Group.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Group.resx" />
+  <event action="Analyze" type="Success" name="frm_main.resx" path="H:\Works\VB.Net\SamEn_Inventory\frm_main.resx" />
+  <event action="Analyze" type="Success" name="Frm_Order.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Order.resx" />
+  <event action="Analyze" type="Success" name="frm_Store.resx" path="H:\Works\VB.Net\SamEn_Inventory\frm_Store.resx" />
+  <event action="Analyze" type="Success" name="Frm_Unit.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Unit.resx" />
+  <event action="Analyze" type="Success" name="Frm_Users.resx" path="H:\Works\VB.Net\SamEn_Inventory\Frm_Users.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="H:\Works\VB.Net\SamEn_Inventory\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="SamEn_Inventory" path="H:\Works\VB.Net\SamEn_Inventory\SamEn_Inventory.vbproj" />
+  <event action="Analyze" type="Success" name="SamEn_Inventory" path="H:\Works\VB.Net\SamEn_Inventory\SamEn_Inventory.sln" />
+</log>

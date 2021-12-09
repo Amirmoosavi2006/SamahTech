@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45AE721E-69A4-4AF5-B924-E23CAB37F44D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PAW.My.MyApplication</StartupObject>
+    <RootNamespace>PAW</RootNamespace>
+    <AssemblyName>PAW</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PAW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PAW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>users.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PersianDateTime">
+      <HintPath>..\..\SamEn_Inventory\bin\Debug\PersianDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frm_Calendar.Designer.vb">
+      <DependentUpon>frm_Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Calendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Edit.Designer.vb">
+      <DependentUpon>frm_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Login.Designer.vb">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Mails.Designer.vb">
+      <DependentUpon>frm_Mails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Mails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Main.Designer.vb">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_NewWork.Designer.vb">
+      <DependentUpon>frm_NewWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_NewWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Find.Designer.vb">
+      <DependentUpon>frm_Find.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Find.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Reports.Designer.vb">
+      <DependentUpon>frm_Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Track.Designer.vb">
+      <DependentUpon>frm_Track.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Track.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Users.Designer.vb">
+      <DependentUpon>frm_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frm_Calendar.resx">
+      <DependentUpon>frm_Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Edit.resx">
+      <DependentUpon>frm_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Login.resx">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Mails.resx">
+      <DependentUpon>frm_Mails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Main.resx">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_NewWork.resx">
+      <DependentUpon>frm_NewWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Find.resx">
+      <DependentUpon>frm_Find.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Reports.resx">
+      <DependentUpon>frm_Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Track.resx">
+      <DependentUpon>frm_Track.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Users.resx">
+      <DependentUpon>frm_Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My-Tehran-1-600x450.jpg" />
+    <None Include="Resources\mitel.jpg" />
+    <None Include="Resources\01.jpg" />
+    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\qlikView-1-min.jpg" />
+    <None Include="Resources\137-old-logo.jpg" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\tag2.png" />
+    <None Include="Resources\line_chart.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\books2.png" />
+    <None Include="Resources\email2.png" />
+    <None Include="Resources\calendar2.png" />
+    <None Include="Resources\magnifier.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\share.png" />
+    <None Include="Resources\tag.png" />
+    <None Include="Resources\post.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\Small_No.png" />
+    <None Include="Resources\Small_Ok.png" />
+    <None Include="Resources\137New.jpg" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\UI_266.png" />
+    <None Include="Resources\UI_124.png" />
+    <None Include="Resources\UI_175.png" />
+    <None Include="Resources\icons8-end-button-50.png" />
+    <None Include="Resources\icons8-new-view-50.png" />
+    <None Include="Resources\icons8-save-close-50.png" />
+    <None Include="Resources\icons8-attach-50.png" />
+    <None Include="Resources\icons8-new-view-501.png" />
+    <None Include="Resources\icons8-print-50.png" />
+    <None Include="Resources\icons8-search-50.png" />
+    <None Include="Resources\icons8-edit-50.png" />
+    <None Include="Resources\bell.gif" />
+    <None Include="Resources\icons8-back-arrow-50.png" />
+    <None Include="Resources\icons8-forward-button-50.png" />
+    <None Include="Resources\icons8-rewind-40.png" />
+    <None Include="Resources\icons8-delete-bin-40.png" />
+    <None Include="Resources\icons8-delete-document-40.png" />
+    <None Include="Resources\icons8-exit-50.png" />
+    <None Include="Resources\icons8-add-message-40.png" />
+    <None Include="Resources\icons8-deleted-message-40.png" />
+    <None Include="Resources\icons8-delete-document-401.png" />
+    <None Include="Resources\icons8-edit-message-40.png" />
+    <None Include="Resources\icons8-new-message-40.png" />
+    <None Include="Resources\icons8-no-message-40.png" />
+    <None Include="Resources\icons8-share-message-40.png" />
+    <None Include="Resources\icons8-down-3-48.png" />
+    <None Include="Resources\icons8-refresh-40.png" />
+    <None Include="Resources\bell1.gif" />
+    <None Include="Resources\Webp.net-gifmaker.gif" />
+    <None Include="Resources\icons8-detective.gif" />
+    <None Include="Resources\icons8-vision-24.png" />
+    <Content Include="users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxComCtl2">
+      <Guid>{FE0065C0-1B7B-11CF-9D53-00AA003C9CB6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ComCtl2">
+      <Guid>{FE0065C0-1B7B-11CF-9D53-00AA003C9CB6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
